@@ -98,16 +98,16 @@ h2{
     line-height: normal;
 }
 
-.informacoes__portifolio {
+.informacoes__portfolio {
     margin: 2% 0% 0% 8%;
 }
 
-.textos__portifolio {
+.textos__portfolio {
     display: flex;
     align-items: last baseline;
 }
 
-.paragrafoportifolio {
+.paragrafoportfolio {
     color: #445964;
     font-variant-numeric: oldstyle-nums proportional-nums;
     font-family: Roboto;
@@ -118,12 +118,12 @@ h2{
     padding-left: 91px;
 }
 
-.meuportifolio {
+.meuportfolio {
     display: flex;
     flex-direction: column;
 }
 
-.textoportifoliocima {
+.textoportfoliocima {
     color: #263138;
     font-family: "Roboto", sans-serif;
     font-size: 64px;
@@ -133,7 +133,7 @@ h2{
     margin-bottom: -20px;
 }
 
-.textoportifoliobaixo {
+.textoportfoliobaixo {
     color: #445964;
     font-family: "Roboto", sans-serif;
     font-size: 64px;
