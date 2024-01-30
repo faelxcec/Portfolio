@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+body{
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    width: 100%;
+    color: #445964;
+}
+header{
+    margin-top: 2%;
+    margin-inline: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoenome{
+    justify-self: start;
+}
+.pages{
+    font-size:20px;
+    font-weight: 500;
+    font-family:'Roboto', sans-serif;
+    color: #445964;
+    text-decoration: none;
+}
+.pages__headder{
+    display: flex;
+    align-items: center;
+    gap: 93px;
+    padding-inline: 16%;
+}
+.botaodecima{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #445964;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.informacoes{
+    margin-inline: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.informacoes__esquerda{
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    width: 545px;
+    height: 830px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.imagem__principal{
+    width: 737px;
+    flex-shrink: 3;
+}
+.logo{
+    width: 50.059px;
+    height: 55px;
+    display: inline-flex;
+    align-items: flex-start;
+}
+.esquerda__botoes{
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+}
+.esquerda__texto{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1px;
+}
+.perfil{
+    width: 40px;
+    height: 38px;
+    padding-inline: 5px;
+}
+.perfil:hover{
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+    padding-inline: 7px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.informacoes__portifolio {
+    margin: 2% 0% 0% 8%;
+}
+
+.textos__portifolio {
+    display: flex;
+    align-items: last baseline;
+}
+
+.paragrafoportifolio {
+    color: #445964;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 91px;
+}
+
+.meuportifolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoportifoliocima {
+    color: #263138;
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: -20px;
+}
+
+.textoportifoliobaixo {
+    color: #445964;
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.previassites {
+    position: relative;
+    width: 640px;
+    height: 380px;
+    border-radius: 20px;
+    background: var(--Dark-Grey, #263138);
+    overflow: hidden;
+}
+
+.descricao-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 640px 380px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.previassites:hover .descricao-hover {
+    opacity: 1;
+}
+
+.previassites:hover .previassites-img {
+    scale: 1.1;
+    transition: 0.6s ease-in-out;
+}
+.todos__sites{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5%;
+}
+.previassites-img{
+    width: 640px;
+    height: 380px;
+}
+
+
