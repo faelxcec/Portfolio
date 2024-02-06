@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
-:root {
-   --cor-principal: #D90602;
-   --cor-secundaria: #721817;
-   --cor-backgournd: #f6f6f6;
+:root{
+    --cor-principal: #D90602;
+    --cor-secundaria: #721817;
+    --cor-backgournd: #f6f6f6;
 }
-
 body{
     box-sizing: border-box;
     background-color: var(--cor-backgournd);
-    width: 100%;
     color: var(--cor-principal);
 }
 header{
@@ -21,16 +19,17 @@ header{
 }
 
 .pages{
-    font-size:20px;
+    font-size: 1.25em;
     font-weight: 500;
     font-family:'Roboto', sans-serif;
     color: var(--cor-principal);
     text-decoration: none;
+    flex-shrink: 0;
 }
-.pages__headder{
+ul{
     display: flex;
     align-items: center;
-    gap: 93px;
+    gap: 5.81rem;
     padding-inline: 16%;
 }
 .botaodecima{
@@ -39,23 +38,30 @@ header{
     text-decoration: none;
     color: var(--cor-principal);
     font-family: "Roboto", sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    flex-shrink: 2;
 }
 .informacoes{
-    margin-inline: 8%;
+    margin: 0% 8% 0% 8%;
+    margin-top: 4.25rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    height: 46.0625rem;
+    gap: 82px;
+    flex-shrink: 4;
+}
+#minhasfotos{
+    width: auto;
+    height: auto;
 }
 .informacoes__esquerda{
-    margin-top: -100px;
+    margin-top: 15rem;
     display: flex;
-    align-items: center;
-    width: 545px;
-    height: 830px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -64,36 +70,30 @@ p{
     font-weight: 500;
     line-height: normal;
 }
-.imagem__principal{
-    width: 737px;
-    flex-shrink: 3;
-}
 .logo{
-    width: 50.059px;
-    height: 55px;
-    display: inline-flex;
+    width: 3.125rem;
+    height: 3.4375rem;
+    display: flex;
     align-items: flex-start;
 }
 .esquerda__botoes{
     display: flex;
-    align-self: flex-end;
-    position: absolute;
 }
 .esquerda__texto{
     display: flex;
     flex-direction: column;
     align-self: center;
-    gap: 1px;
+    gap: 0.0625rem;
 }
 .perfil{
-    width: 40px;
-    height: 38px;
-    padding-inline: 5px;
+    width: 2.5rem;
+    height: 2.375rem;
+    padding-inline: 0.3125rem;
 }
 .perfil:hover{
     transform: scale(1.3);
     transition-duration: 0.2s;
-    padding-inline: 7px;
+    padding-inline: 0.4375rem;
 }
 h2{
     font-family: 'Roboto', sans-serif;
@@ -101,6 +101,7 @@ h2{
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    flex-shrink: 4;
 }
 
 .informacoes__portfolio {
@@ -116,11 +117,11 @@ h2{
     color: var(--cor-principal);
     font-variant-numeric: oldstyle-nums proportional-nums;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-left: 91px;
+    padding-left: 5.6875rem;
 }
 
 .meuportfolio {
@@ -131,17 +132,17 @@ h2{
 .textoportfoliocima {
     color: var(--cor-secundaria);
     font-family: "Roboto", sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    margin-bottom: -20px;
+    margin-bottom: -1.25rem;
 }
 
 .textoportfoliobaixo {
     color: var(--cor-principal);
     font-family: "Roboto", sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -149,9 +150,9 @@ h2{
 
 .previassites {
     position: relative;
-    width: 640px;
-    height: 380px;
-    border-radius: 20px;
+    width: 40rem;
+    height: 23.75rem;
+    border-radius: 1.25rem;
     background: var(--cor-secundaria);
     overflow: hidden;
 }
@@ -163,7 +164,7 @@ h2{
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--cor-backgournd);
-    padding: 640px 380px;
+    padding: 40rem 23.75rem;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -179,12 +180,62 @@ h2{
 .todos__sites{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.635rem;
     margin-top: 5%;
 }
 .previassites-img{
-    width: 640px;
-    height: 380px;
+    width: 40rem;
+    height: 23.75rem;
 }
-
-
+@media (max-width: 1120px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacoes{
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-top: 1rem;
+        width: 95%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 0% 2% 0% 2%;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #minhasfotos{
+        width: 70%;
+        height: auto;
+        object-position: center;
+    }
+    .informacoes__esquerda{
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+    h2{
+        font-size: 8vw;
+        text-align: center;
+        text-overflow: ellipsis;
+        object-position: center;
+        word-break:break-all ;
+    }
+    p{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .perfil{
+        height: 4.5vw;
+        padding-inline: 0.3125rem;
+    }
+    .esquerda__botoes{
+        margin-top: 20%;
+    }
+}
