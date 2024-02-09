@@ -213,6 +213,7 @@ h2{
         width: 70%;
         height: auto;
         object-position: center;
+        margin-top: 7%;
     }
     .informacoes__esquerda{
         margin-top: 3rem;
@@ -225,7 +226,7 @@ h2{
         text-align: center;
         text-overflow: ellipsis;
         object-position: center;
-        word-break:break-all ;
+        word-break: break-word;
     }
     p{
         font-size: 3vw;
@@ -237,5 +238,42 @@ h2{
     }
     .esquerda__botoes{
         margin-top: 20%;
+    }
+    .informacoes__portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 2% 4% 0% 4%
+    }
+    .todos__sites{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .meuportfolio{
+        align-items: center;
+    }
+    .textos__portfolio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+    }
+    .paragrafoportfolio{
+        padding-left: 0;
+        word-break: break-word;
+        max-inline-size: 90%;
+    }
+    br{
+        display: none;
+    }
+    .previassites{
+        width: 100%;
+        height: 100%;
+    }
+    .previassites-img{
+        width: 100%;
+        height: 200%;
     }
 }
